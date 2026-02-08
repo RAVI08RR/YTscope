@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #ff9b29;
+  --color-brand-black: #0d0d0d;
+  --color-brand-card: #1a1a1a;
+  
+  --font-sans: var(--font-inter);
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(255, 155, 41, 0.5);
+  }
+  
+  .bg-glass {
+    @apply bg-brand-card/30 backdrop-blur-md border border-white/5;
+  }
+}
+
+body {
+  background: var(--color-brand-black);
+  color: #fafafa;
+}
